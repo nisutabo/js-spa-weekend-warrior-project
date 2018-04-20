@@ -1,0 +1,69 @@
+<html>
+<head>
+  <style media="screen">
+
+    .floating-box {
+      float: center;
+      width: flex;
+      height: 170px;
+      margin: 20px;
+  }
+  .big-box{
+    width: 50%;
+  }
+
+  .bottom {
+      padding-bottom: 0px;
+  }
+
+  .current-time {
+    font-family: Helvetica;
+    font-size: 15px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: black
+
+  }
+
+  .mini {
+    font-family: Helvetica;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: black;
+  }
+
+  .display {
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: grey;
+  }
+
+
+
+.units {
+  font-size: 70px;
+  color: grey;
+}
+  </style>
+  <title>Weather</title>
+  <!-- require files here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+  </script>
+  <script src="index.css"></script>
+  <script src="js/index.js"></script>
+
+</head>
+<body>
+  <p class='mini'>New York, NY, USA<br><span id="now" class="current-time"></span></p>
+  <canvas class="bottom" id="NYCWeatherChart" width="800" height="390"></canvas
+    ><div id='conditions'></div>
+</body>
+</html>
